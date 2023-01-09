@@ -20,7 +20,7 @@ Trying to pass a non-integer argument
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("name", "5")
 	Traceback (most recent call last):
-
+		...
 	TypeError: name must be an integer
 
 
@@ -28,7 +28,7 @@ Trying to pass a boolean value
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("name", True)
 	Traceback (most recent call last):
-
+		...
 	TypeError: name must be an integer
 
 
@@ -63,8 +63,8 @@ Passing one argument to integer_validator
 Integer_validator with no arguments
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator()
-	>>> Traceback (most recent call last):
-
+	Traceback (most recent call last):
+		...
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
@@ -99,7 +99,7 @@ Passing tuple to method
 
 
 Passing list to method
-	>>> bg = BaseGeometry
+	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("age", [3])
 	Traceback (most recent call last):
 		...
